@@ -33,5 +33,6 @@ public class GlobalExceptionHandler{
         error.setException("Exception: " + e.getMessage());
         HttpStatus status = HttpStatus.INTERNAL_SERVER_ERROR;
         return new ResponseEntity<ApiError>(error, status);
+
     }
 }
