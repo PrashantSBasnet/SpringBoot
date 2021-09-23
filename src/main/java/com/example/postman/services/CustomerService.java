@@ -12,9 +12,12 @@ public interface CustomerService {
 
     void deleteCustomerbyId(Integer id);
 
+
     public CustomerDto saveCustomer(CustomerDto customerDto);
 
-    List<CustomerDto> searchCustomer(String keyword);
+    public CustomerDto updateCustomer(CustomerDto cusotmerDto);
 
-    List<CustomerDto> getCustomerById (Integer id);
+    List<CustomerDto> searchCustomer(String keyword) throws Exception;
+
+    CustomerDto getCustomerById (Integer id) throws Exception;
 }

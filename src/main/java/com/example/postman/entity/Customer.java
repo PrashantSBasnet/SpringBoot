@@ -13,7 +13,8 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Data
 @Entity
-@Table(name="customer_table")
+@Table(name="customer_table", uniqueConstraints ={
+        @UniqueConstraint(name= "UNIQUE_customer_name", columnNames = "name")})
 public class Customer {
 
     @Id
