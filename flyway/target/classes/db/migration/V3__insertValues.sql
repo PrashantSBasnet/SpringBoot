@@ -1,0 +1,1 @@
+INSERT INTO flyway_table VALUES ('10', 'good', 'newphone', 'olddays')
