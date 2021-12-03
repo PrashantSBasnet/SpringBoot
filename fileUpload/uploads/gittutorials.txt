@@ -1,0 +1,1141 @@
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   src/main/java/com/example/ems/entity/Designation.java
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/main/java/com/example/ems/entity/Designation.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .idea/
+        EMS.iml
+        Employee_Details.iml
+        HELP.md
+        mvnw
+        mvnw.cmd
+        pom.xml
+        src/main/java/com/example/ems/EmsApplication.java
+        src/main/java/com/example/ems/controller/
+        src/main/java/com/example/ems/dto/
+        src/main/java/com/example/ems/service/
+        src/main/resources/
+        src/test/
+        target/
+
+prashant@Prashants-MacBook-Air EMS % git add .
+prashant@Prashants-MacBook-Air EMS % git commit -m "first commit"
+[master (root-commit) 6169907] first commit
+ 119 files changed, 4143 insertions(+)
+ create mode 100644 .idea/compiler.xml
+ create mode 100644 .idea/dataSources.local.xml
+ create mode 100644 .idea/dataSources.xml
+ create mode 100644 .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e.xml
+ create mode 100644 .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/entities/entities.dat
+ create mode 100644 .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/entities/entities.dat.len
+ create mode 100644 .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/entities/entities.dat.values
+ create mode 100644 .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/entities/entities.dat.values.at
+ create mode 100644 .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/entities/entities.dat.values.s
+ create mode 100644 .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/entities/entities.dat_i
+ create mode 100644 .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/entities/entities.dat_i.len
+ create mode 100644 .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/storage_v2/_src_/database/newdb.Hs49Bg.meta
+ create mode 100644 .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/storage_v2/_src_/database/newdb.Hs49Bg/schema/information_schema.FNRwLQ.meta
+ create mode 100644 .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/storage_v2/_src_/database/newdb.Hs49Bg/schema/pg_catalog.0S1ZNQ.meta
+ create mode 100644 .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/storage_v2/_src_/database/newdb.Hs49Bg/schema/public.abK9xQ.meta
+ create mode 100644 .idea/encodings.xml
+ create mode 100644 .idea/jarRepositories.xml
+ create mode 100644 .idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_5.xml
+ create mode 100644 .idea/libraries/Maven__ch_qos_logback_logback_core_1_2_5.xml
+ create mode 100644 .idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_12_4.xml
+ create mode 100644 .idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_12_4.xml
+ create mode 100644 .idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_12_4.xml
+ create mode 100644 .idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_12_4.xml
+ create mode 100644 .idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_12_4.xml
+ create mode 100644 .idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_12_4.xml
+ create mode 100644 .idea/libraries/Maven__com_jayway_jsonpath_json_path_2_5_0.xml
+ create mode 100644 .idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml
+ create mode 100644 .idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml
+ create mode 100644 .idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml
+ create mode 100644 .idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml
+ create mode 100644 .idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_22.xml
+ create mode 100644 .idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_22.xml
+ create mode 100644 .idea/libraries/Maven__net_minidev_accessors_smart_2_4_7.xml
+ create mode 100644 .idea/libraries/Maven__net_minidev_json_smart_2_4_7.xml
+ create mode 100644 .idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_14_1.xml
+ create mode 100644 .idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_14_1.xml
+ create mode 100644 .idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_52.xml
+ create mode 100644 .idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_52.xml
+ create mode 100644 .idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_52.xml
+ create mode 100644 .idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml
+ create mode 100644 .idea/libraries/Maven__org_assertj_assertj_core_3_19_0.xml
+ create mode 100644 .idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml
+ create mode 100644 .idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml
+ create mode 100644 .idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_2.xml
+ create mode 100644 .idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_2.xml
+ create mode 100644 .idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_2.xml
+ create mode 100644 .idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_2.xml
+ create mode 100644 .idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_2.xml
+ create mode 100644 .idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_2.xml
+ create mode 100644 .idea/libraries/Maven__org_mockito_mockito_core_3_9_0.xml
+ create mode 100644 .idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_9_0.xml
+ create mode 100644 .idea/libraries/Maven__org_objenesis_objenesis_3_2.xml
+ create mode 100644 .idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml
+ create mode 100644 .idea/libraries/Maven__org_ow2_asm_asm_9_1.xml
+ create mode 100644 .idea/libraries/Maven__org_projectlombok_lombok_1_18_20.xml
+ create mode 100644 .idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml
+ create mode 100644 .idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_32.xml
+ create mode 100644 .idea/libraries/Maven__org_slf4j_slf4j_api_1_7_32.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_boot_spring_boot_2_5_4.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_5_4.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_boot_spring_boot_configuration_processor_2_5_4.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_5_4.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_5_4.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_5_4.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_5_4.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_5_4.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_5_4.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_5_4.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_5_4.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_5_4.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_5_4.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_experimental_spring_native_0_10_2.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_spring_aop_5_3_9.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_spring_beans_5_3_9.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_spring_context_5_3_9.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_spring_core_5_3_9.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_spring_expression_5_3_9.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_spring_jcl_5_3_9.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_spring_test_5_3_9.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_spring_web_5_3_9.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_spring_webmvc_5_3_9.xml
+ create mode 100644 .idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_4_RELEASE.xml
+ create mode 100644 .idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_12_RELEASE.xml
+ create mode 100644 .idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_12_RELEASE.xml
+ create mode 100644 .idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml
+ create mode 100644 .idea/libraries/Maven__org_xmlunit_xmlunit_core_2_8_2.xml
+ create mode 100644 .idea/libraries/Maven__org_yaml_snakeyaml_1_28.xml
+ create mode 100644 .idea/misc.xml
+ create mode 100644 .idea/modules.xml
+ create mode 100644 .idea/runConfigurations.xml
+ create mode 100644 .idea/vcs.xml
+ create mode 100644 .idea/workspace.xml
+ create mode 100644 EMS.iml
+ create mode 100644 Employee_Details.iml
+ create mode 100644 HELP.md
+ create mode 100755 mvnw
+ create mode 100644 mvnw.cmd
+ create mode 100644 pom.xml
+ create mode 100644 src/main/java/com/example/ems/EmsApplication.java
+ create mode 100644 src/main/java/com/example/ems/controller/DesignationController.java
+ create mode 100644 src/main/java/com/example/ems/dto/DesignationDto.java
+ create mode 100644 src/main/java/com/example/ems/entity/Designation.java
+ create mode 100644 src/main/java/com/example/ems/service/DesignationService.java
+ create mode 100644 src/main/resources/application.properties
+ create mode 100644 src/main/resources/templates/index.html
+ create mode 100644 src/main/resources/templates/index1.html
+ create mode 100644 src/test/java/com/example/ems/EmsApplicationTests.java
+ create mode 100644 target/classes/application.properties
+ create mode 100644 target/classes/com/example/ems/EmsApplication.class
+ create mode 100644 target/classes/com/example/ems/controller/DesignationController.class
+ create mode 100644 target/classes/com/example/ems/dto/DesignationDto.class
+ create mode 100644 target/classes/com/example/ems/service/DesignationService.class
+ create mode 100644 target/classes/templates/index.html
+ create mode 100644 target/classes/templates/index1.html
+ create mode 100644 target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+ create mode 100644 target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+ create mode 100644 target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+ create mode 100644 target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+ create mode 100644 target/test-classes/com/example/ems/EmsApplicationTests.class
+prashant@Prashants-MacBook-Air EMS % git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+prashant@Prashants-MacBook-Air EMS % git push origin -u master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+prashant@Prashants-MacBook-Air EMS % git checkout -b ems_param
+Switched to a new branch 'ems_param'
+prashant@Prashants-MacBook-Air EMS % git add . 
+prashant@Prashants-MacBook-Air EMS % git commit -m "new branch"
+[ems_param 2310642] new branch
+ 1 file changed, 4 insertions(+), 13 deletions(-)
+prashant@Prashants-MacBook-Air EMS % git push origin -u ems_param
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+prashant@Prashants-MacBook-Air EMS % git status
+On branch ems_param
+nothing to commit, working tree clean
+prashant@Prashants-MacBook-Air EMS % ls
+EMS.iml                 HELP.md                 mvnw.cmd                src
+Employee_Details.iml    mvnw                    pom.xml                 target
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % ls -al
+total 136
+drwxr-xr-x  13 prashant  staff    416 Aug 27 15:40 .
+drwx------@ 50 prashant  staff   1600 Aug 27 14:55 ..
+-rw-r--r--@  1 prashant  staff   6148 Aug 27 12:46 .DS_Store
+drwxr-xr-x  12 prashant  staff    384 Aug 27 16:10 .git
+drwxr-xr-x  14 prashant  staff    448 Aug 27 16:10 .idea
+-rw-r--r--   1 prashant  staff  12461 Aug 27 12:42 EMS.iml
+-rw-r--r--   1 prashant  staff   9564 Aug 27 15:40 Employee_Details.iml
+-rw-r--r--   1 prashant  staff   3232 Aug 27 10:41 HELP.md
+-rwxr-xr-x   1 prashant  staff  10070 Aug 27 10:41 mvnw
+-rw-r--r--   1 prashant  staff   6608 Aug 27 10:41 mvnw.cmd
+-rw-r--r--   1 prashant  staff   6589 Aug 27 15:39 pom.xml
+drwxr-xr-x   4 prashant  staff    128 Aug 27 10:41 src
+drwxr-xr-x   7 prashant  staff    224 Aug 27 15:21 target
+prashant@Prashants-MacBook-Air EMS % rm -rf  .git
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % ls
+EMS.iml                 HELP.md                 mvnw.cmd                src
+Employee_Details.iml    mvnw                    pom.xml                 target
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % ls -al
+total 136
+drwxr-xr-x  12 prashant  staff    384 Aug 27 16:11 .
+drwx------@ 50 prashant  staff   1600 Aug 27 14:55 ..
+-rw-r--r--@  1 prashant  staff   6148 Aug 27 12:46 .DS_Store
+drwxr-xr-x  14 prashant  staff    448 Aug 27 16:10 .idea
+-rw-r--r--   1 prashant  staff  12461 Aug 27 12:42 EMS.iml
+-rw-r--r--   1 prashant  staff   9564 Aug 27 15:40 Employee_Details.iml
+-rw-r--r--   1 prashant  staff   3232 Aug 27 10:41 HELP.md
+-rwxr-xr-x   1 prashant  staff  10070 Aug 27 10:41 mvnw
+-rw-r--r--   1 prashant  staff   6608 Aug 27 10:41 mvnw.cmd
+-rw-r--r--   1 prashant  staff   6589 Aug 27 15:39 pom.xml
+drwxr-xr-x   4 prashant  staff    128 Aug 27 10:41 src
+drwxr-xr-x   7 prashant  staff    224 Aug 27 15:21 target
+prashant@Prashants-MacBook-Air EMS % clear
+prashant@Prashants-MacBook-Air EMS % git remote add origin https://gitlab.com/PrashantSBasnet/crud-springboot.git
+fatal: remote origin already exists.
+prashant@Prashants-MacBook-Air EMS % git remote add origin1 https://gitlab.com/PrashantSBasnet/crud-springboot.git
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   ../CRUD/.gitignore
+        new file:   ../CRUD/.mvn/wrapper/MavenWrapperDownloader.java
+        new file:   ../CRUD/.mvn/wrapper/maven-wrapper.jar
+        new file:   ../CRUD/.mvn/wrapper/maven-wrapper.properties
+        new file:   ../CRUD/mvnw
+        new file:   ../CRUD/mvnw.cmd
+        new file:   ../CRUD/pom.xml
+        new file:   ../CRUD/src/main/java/com/example/crud/CrudApplication.java
+        new file:   ../CRUD/src/main/java/com/example/crud/controller/DesignationController.java
+        new file:   ../CRUD/src/main/java/com/example/crud/dto/DesignationDto.java
+        new file:   ../CRUD/src/main/resources/application.properties
+        new file:   ../CRUD/src/main/resources/templates/index.html
+        new file:   ../CRUD/src/test/java/com/example/crud/CrudApplicationTests.java
+        new file:   src/main/java/com/example/ems/controller/DesignationController.java
+        new file:   src/main/java/com/example/ems/dto/DesignationDto.java
+        new file:   src/main/java/com/example/ems/service/DesignationService.java
+        new file:   src/main/resources/templates/index.html
+        new file:   ../Employee Management Sys/EmployeeManagementSystem/src/main/resources/designation/index.html
+        new file:   ../ManagementSystem/src/main/java/com/example/managementsystem/controller/DesignationController.java
+        new file:   ../ParameterPass/.gitignore
+        new file:   ../ParameterPass/.mvn/wrapper/MavenWrapperDownloader.java
+        new file:   ../ParameterPass/.mvn/wrapper/maven-wrapper.jar
+        new file:   ../ParameterPass/.mvn/wrapper/maven-wrapper.properties
+        new file:   ../ParameterPass/lib/javax.ejb.jar
+        new file:   ../ParameterPass/lib/javax.jms.jar
+        new file:   ../ParameterPass/lib/javax.persistence.jar
+        new file:   ../ParameterPass/lib/javax.resource.jar
+        new file:   ../ParameterPass/lib/javax.servlet.jar
+        new file:   ../ParameterPass/lib/javax.servlet.jsp.jar
+        new file:   ../ParameterPass/lib/javax.servlet.jsp.jstl.jar
+        new file:   ../ParameterPass/lib/javax.transaction.jar
+        new file:   ../ParameterPass/mvnw
+        new file:   ../ParameterPass/mvnw.cmd
+        new file:   ../ParameterPass/pom.xml
+        new file:   ../ParameterPass/src/main/java/com/example/parameterpass/ParameterPassApplication.java
+        new file:   ../ParameterPass/src/main/java/controller/MainController.java
+        new file:   ../ParameterPass/src/main/resources/application.properties
+        new file:   ../ParameterPass/src/main/resources/index.html
+        new file:   ../ParameterPass/src/test/java/com/example/parameterpass/ParameterPassApplicationTests.java
+        new file:   ../ParameterThymeleaf/src/main/java/com/example/parameterthymeleaf/Controller/DemoController.java
+        new file:   ../Thyme/src/main/java/com/example/thyme/controller/MainController.java
+        new file:   ../Thyme/src/main/java/com/example/thyme/dto/SampleDto.java
+        new file:   ../Thyme/src/main/resources/templates/index.html
+        new file:   ../demo/src/main/java/com/example/demo/controller/DesignationController.java
+        new file:   ../demo/src/main/java/com/example/demo/dto/DesignationDto.java
+        new file:   ../demo/src/main/resources/index.html
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ../CRUD/src/main/java/com/example/crud/controller/DesignationController.java
+        modified:   ../CRUD/src/main/java/com/example/crud/dto/DesignationDto.java
+        modified:   ../CRUD/src/main/resources/templates/index.html
+        modified:   ../CRUD/src/test/java/com/example/crud/CrudApplicationTests.java
+        modified:   src/main/java/com/example/ems/controller/DesignationController.java
+        modified:   src/main/java/com/example/ems/service/DesignationService.java
+        modified:   src/main/resources/templates/index.html
+        modified:   ../Employee Management Sys/EmployeeManagementSystem/src/main/resources/designation/index.html
+        deleted:    ../ManagementSystem/src/main/java/com/example/managementsystem/controller/DesignationController.java
+        modified:   ../ParameterPass/pom.xml
+        modified:   ../ParameterPass/src/main/java/controller/MainController.java
+        modified:   ../ParameterPass/src/main/resources/index.html
+        modified:   ../ParameterThymeleaf/src/main/java/com/example/parameterthymeleaf/Controller/DemoController.java
+        modified:   ../Thyme/src/main/java/com/example/thyme/controller/MainController.java
+        modified:   ../Thyme/src/main/java/com/example/thyme/dto/SampleDto.java
+        modified:   ../demo/src/main/java/com/example/demo/dto/DesignationDto.java
+        modified:   ../demo/src/main/resources/index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../.gitignore
+        ../.localized
+        ../?intitle: index.of? mkv name
+        ../Articles/
+        ../Concepts_Java/
+        .idea/
+        EMS.iml
+        Employee_Details.iml
+        HELP.md
+        mvnw
+        mvnw.cmd
+        pom.xml
+        src/main/java/com/example/ems/EmsApplication.java
+        src/main/java/com/example/ems/entity/
+        src/main/resources/application.properties
+        src/main/resources/templates/index1.html
+        src/test/
+        target/
+        ../Employee Management Sys/EmployeeManagementSystem/.gitignore
+        ../Employee Management Sys/EmployeeManagementSystem/.mvn/
+        ../Employee Management Sys/EmployeeManagementSystem/mvnw
+        ../Employee Management Sys/EmployeeManagementSystem/mvnw.cmd
+        ../Employee Management Sys/EmployeeManagementSystem/pom.xml
+        ../Employee Management Sys/EmployeeManagementSystem/src/main/java/
+        ../Employee Management Sys/EmployeeManagementSystem/src/main/resources/application.properties
+        ../Employee Management Sys/EmployeeManagementSystem/src/test/
+        ../Employee Management Sys/Tutorial1/
+        ../Info Developers/
+        ../JAVA codes ss/
+        ../JDBC/
+        ../LEVEL 6/
+        ../Lincoln.2012.1080p.Bluray.x264.YIFY.mp4
+        ../MY CV2.docx
+        ../OS/
+        ../ParameterThymeleaf/.gitignore
+        ../ParameterThymeleaf/.mvn/
+        ../ParameterThymeleaf/mvnw
+        ../ParameterThymeleaf/mvnw.cmd
+        ../ParameterThymeleaf/pom.xml
+        ../ParameterThymeleaf/src/main/java/com/example/parameterthymeleaf/ParameterThymeleafApplication.java
+        ../ParameterThymeleaf/src/main/resources/
+        ../ParameterThymeleaf/src/test/
+        ../PrashantSBasnetCV.pdf
+        ../PrashantSinghBasnetCV.pdf
+        ../Prashantcv.docx
+        ../Prashantcv.pdf
+        ../Professional Hadoop - Benoy Antony, Konstantin Boudnik, Cheryl Adams, Branky Shao, Cazen Lee, Kai Sa.pdf
+        ../Spring/
+        ../Submitted Home assignments/
+        ../Thyme/.gitignore
+        ../Thyme/.mvn/
+        ../Thyme/mvnw
+        ../Thyme/mvnw.cmd
+        ../Thyme/pom.xml
+        ../Thyme/src/main/java/com/example/thyme/ThymeApplication.java
+        ../Thyme/src/main/resources/application.properties
+        ../Thyme/src/test/
+        ../Thymeleaf/
+        ../apex.png
+        ../binaryfiles/
+        ../bookmarks_8_22_20.html
+        ../comp2 PROD PRJ.png
+        ../coverletter:cv/
+        ../demo/.gitignore
+        ../demo/.mvn/
+        ../demo/mvnw
+        ../demo/mvnw.cmd
+        ../demo/pom.xml
+        ../demo/src/main/java/com/example/demo/DemoApplication.java
+        ../demo/src/main/resources/application.properties
+        ../demo/src/test/
+        ../docker screenshots/
+        ../download movie.png
+        ../expenses.xlsx
+        ../git/
+        ../hadoop prg/
+        ../imghadoop/
+        ../malshree (online-audio-converter.com).mp3
+        ../mg vs nexon.png
+        ../oracle sudo
+        ../part-r-00000
+        ../screenshots level 6/
+        ../thymeLeafDemo/
+        ../voice/
+
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % git add .
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % git commit -m "initial commit"
+[master (root-commit) 7b7855b] initial commit
+ 161 files changed, 6010 insertions(+)
+ create mode 100644 CRUD/.gitignore
+ create mode 100644 CRUD/.mvn/wrapper/MavenWrapperDownloader.java
+ create mode 100644 CRUD/.mvn/wrapper/maven-wrapper.jar
+ create mode 100644 CRUD/.mvn/wrapper/maven-wrapper.properties
+ create mode 100755 CRUD/mvnw
+ create mode 100644 CRUD/mvnw.cmd
+ create mode 100644 CRUD/pom.xml
+ create mode 100644 CRUD/src/main/java/com/example/crud/CrudApplication.java
+ create mode 100644 CRUD/src/main/java/com/example/crud/controller/DesignationController.java
+ create mode 100644 CRUD/src/main/java/com/example/crud/dto/DesignationDto.java
+ create mode 100644 CRUD/src/main/resources/application.properties
+ create mode 100644 CRUD/src/main/resources/templates/index.html
+ create mode 100644 CRUD/src/test/java/com/example/crud/CrudApplicationTests.java
+ create mode 100644 EMS/.idea/compiler.xml
+ create mode 100644 EMS/.idea/dataSources.local.xml
+ create mode 100644 EMS/.idea/dataSources.xml
+ create mode 100644 EMS/.idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e.xml
+ create mode 100644 EMS/.idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/entities/entities.dat
+ create mode 100644 EMS/.idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/entities/entities.dat.len
+ create mode 100644 EMS/.idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/entities/entities.dat.values
+ create mode 100644 EMS/.idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/entities/entities.dat.values.at
+ create mode 100644 EMS/.idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/entities/entities.dat.values.s
+ create mode 100644 EMS/.idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/entities/entities.dat_i
+ create mode 100644 EMS/.idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/entities/entities.dat_i.len
+ create mode 100644 EMS/.idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/storage_v2/_src_/database/newdb.Hs49Bg.meta
+ create mode 100644 EMS/.idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/storage_v2/_src_/database/newdb.Hs49Bg/schema/information_schema.FNRwLQ.meta
+ create mode 100644 EMS/.idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/storage_v2/_src_/database/newdb.Hs49Bg/schema/pg_catalog.0S1ZNQ.meta
+ create mode 100644 EMS/.idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/storage_v2/_src_/database/newdb.Hs49Bg/schema/public.abK9xQ.meta
+ create mode 100644 EMS/.idea/encodings.xml
+ create mode 100644 EMS/.idea/jarRepositories.xml
+ create mode 100644 EMS/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_5.xml
+ create mode 100644 EMS/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_5.xml
+ create mode 100644 EMS/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_12_4.xml
+ create mode 100644 EMS/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_12_4.xml
+ create mode 100644 EMS/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_12_4.xml
+ create mode 100644 EMS/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_12_4.xml
+ create mode 100644 EMS/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_12_4.xml
+ create mode 100644 EMS/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_12_4.xml
+ create mode 100644 EMS/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_5_0.xml
+ create mode 100644 EMS/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml
+ create mode 100644 EMS/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml
+ create mode 100644 EMS/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml
+ create mode 100644 EMS/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml
+ create mode 100644 EMS/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_22.xml
+ create mode 100644 EMS/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_22.xml
+ create mode 100644 EMS/.idea/libraries/Maven__net_minidev_accessors_smart_2_4_7.xml
+ create mode 100644 EMS/.idea/libraries/Maven__net_minidev_json_smart_2_4_7.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_14_1.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_14_1.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_52.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_52.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_52.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_assertj_assertj_core_3_19_0.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_2.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_2.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_2.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_2.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_2.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_2.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_mockito_mockito_core_3_9_0.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_9_0.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_objenesis_objenesis_3_2.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_ow2_asm_asm_9_1.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_projectlombok_lombok_1_18_20.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_32.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_32.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_5_4.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_5_4.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_springframework_boot_spring_boot_configuration_processor_2_5_4.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_5_4.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_5_4.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_5_4.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_5_4.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_5_4.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_5_4.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_5_4.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_5_4.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_5_4.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_5_4.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_springframework_experimental_spring_native_0_10_2.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_springframework_spring_aop_5_3_9.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_springframework_spring_beans_5_3_9.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_springframework_spring_context_5_3_9.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_springframework_spring_core_5_3_9.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_springframework_spring_expression_5_3_9.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_9.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_springframework_spring_test_5_3_9.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_springframework_spring_web_5_3_9.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_9.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_4_RELEASE.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_12_RELEASE.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_12_RELEASE.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_8_2.xml
+ create mode 100644 EMS/.idea/libraries/Maven__org_yaml_snakeyaml_1_28.xml
+ create mode 100644 EMS/.idea/misc.xml
+ create mode 100644 EMS/.idea/modules.xml
+ create mode 100644 EMS/.idea/runConfigurations.xml
+ create mode 100644 EMS/.idea/vcs.xml
+ create mode 100644 EMS/.idea/workspace.xml
+ create mode 100644 EMS/EMS.iml
+ create mode 100644 EMS/Employee_Details.iml
+ create mode 100644 EMS/HELP.md
+ create mode 100755 EMS/mvnw
+ create mode 100644 EMS/mvnw.cmd
+ create mode 100644 EMS/pom.xml
+ create mode 100644 EMS/src/main/java/com/example/ems/EmsApplication.java
+ create mode 100644 EMS/src/main/java/com/example/ems/controller/DesignationController.java
+ create mode 100644 EMS/src/main/java/com/example/ems/dto/DesignationDto.java
+ create mode 100644 EMS/src/main/java/com/example/ems/entity/Designation.java
+ create mode 100644 EMS/src/main/java/com/example/ems/service/DesignationService.java
+ create mode 100644 EMS/src/main/resources/application.properties
+ create mode 100644 EMS/src/main/resources/templates/index.html
+ create mode 100644 EMS/src/main/resources/templates/index1.html
+ create mode 100644 EMS/src/test/java/com/example/ems/EmsApplicationTests.java
+ create mode 100644 EMS/target/classes/application.properties
+ create mode 100644 EMS/target/classes/com/example/ems/EmsApplication.class
+ create mode 100644 EMS/target/classes/com/example/ems/controller/DesignationController.class
+ create mode 100644 EMS/target/classes/com/example/ems/dto/DesignationDto.class
+ create mode 100644 EMS/target/classes/com/example/ems/service/DesignationService.class
+ create mode 100644 EMS/target/classes/templates/index.html
+ create mode 100644 EMS/target/classes/templates/index1.html
+ create mode 100644 EMS/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+ create mode 100644 EMS/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+ create mode 100644 EMS/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+ create mode 100644 EMS/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+ create mode 100644 EMS/target/test-classes/com/example/ems/EmsApplicationTests.class
+ create mode 100644 Employee Management Sys/EmployeeManagementSystem/src/main/resources/designation/index.html
+ create mode 100644 ManagementSystem/src/main/java/com/example/managementsystem/controller/DesignationController.java
+ create mode 100644 ParameterPass/.gitignore
+ create mode 100644 ParameterPass/.mvn/wrapper/MavenWrapperDownloader.java
+ create mode 100644 ParameterPass/.mvn/wrapper/maven-wrapper.jar
+ create mode 100644 ParameterPass/.mvn/wrapper/maven-wrapper.properties
+ create mode 100644 ParameterPass/lib/javax.ejb.jar
+ create mode 100644 ParameterPass/lib/javax.jms.jar
+ create mode 100644 ParameterPass/lib/javax.persistence.jar
+ create mode 100644 ParameterPass/lib/javax.resource.jar
+ create mode 100644 ParameterPass/lib/javax.servlet.jar
+ create mode 100644 ParameterPass/lib/javax.servlet.jsp.jar
+ create mode 100644 ParameterPass/lib/javax.servlet.jsp.jstl.jar
+ create mode 100644 ParameterPass/lib/javax.transaction.jar
+ create mode 100755 ParameterPass/mvnw
+ create mode 100644 ParameterPass/mvnw.cmd
+ create mode 100644 ParameterPass/pom.xml
+ create mode 100644 ParameterPass/src/main/java/com/example/parameterpass/ParameterPassApplication.java
+ create mode 100644 ParameterPass/src/main/java/controller/MainController.java
+ create mode 100644 ParameterPass/src/main/resources/application.properties
+ create mode 100644 ParameterPass/src/main/resources/index.html
+ create mode 100644 ParameterPass/src/test/java/com/example/parameterpass/ParameterPassApplicationTests.java
+ create mode 100644 ParameterThymeleaf/src/main/java/com/example/parameterthymeleaf/Controller/DemoController.java
+ create mode 100644 Thyme/src/main/java/com/example/thyme/controller/MainController.java
+ create mode 100644 Thyme/src/main/java/com/example/thyme/dto/SampleDto.java
+ create mode 100644 Thyme/src/main/resources/templates/index.html
+ create mode 100644 demo/src/main/java/com/example/demo/controller/DesignationController.java
+ create mode 100644 demo/src/main/java/com/example/demo/dto/DesignationDto.java
+ create mode 100644 demo/src/main/resources/index.html
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ../CRUD/src/main/java/com/example/crud/controller/DesignationController.java
+        modified:   ../CRUD/src/main/java/com/example/crud/dto/DesignationDto.java
+        modified:   ../CRUD/src/main/resources/templates/index.html
+        modified:   ../CRUD/src/test/java/com/example/crud/CrudApplicationTests.java
+        modified:   ../Employee Management Sys/EmployeeManagementSystem/src/main/resources/designation/index.html
+        deleted:    ../ManagementSystem/src/main/java/com/example/managementsystem/controller/DesignationController.java
+        modified:   ../ParameterPass/pom.xml
+        modified:   ../ParameterPass/src/main/java/controller/MainController.java
+        modified:   ../ParameterPass/src/main/resources/index.html
+        modified:   ../ParameterThymeleaf/src/main/java/com/example/parameterthymeleaf/Controller/DemoController.java
+        modified:   ../Thyme/src/main/java/com/example/thyme/controller/MainController.java
+        modified:   ../Thyme/src/main/java/com/example/thyme/dto/SampleDto.java
+        modified:   ../demo/src/main/java/com/example/demo/dto/DesignationDto.java
+        modified:   ../demo/src/main/resources/index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../.gitignore
+        ../.localized
+        ../?intitle: index.of? mkv name
+        ../Articles/
+        ../Concepts_Java/
+        ../Employee Management Sys/EmployeeManagementSystem/.gitignore
+        ../Employee Management Sys/EmployeeManagementSystem/.mvn/
+        ../Employee Management Sys/EmployeeManagementSystem/mvnw
+        ../Employee Management Sys/EmployeeManagementSystem/mvnw.cmd
+        ../Employee Management Sys/EmployeeManagementSystem/pom.xml
+        ../Employee Management Sys/EmployeeManagementSystem/src/main/java/
+        ../Employee Management Sys/EmployeeManagementSystem/src/main/resources/application.properties
+        ../Employee Management Sys/EmployeeManagementSystem/src/test/
+        ../Employee Management Sys/Tutorial1/
+        ../Info Developers/
+        ../JAVA codes ss/
+        ../JDBC/
+        ../LEVEL 6/
+        ../Lincoln.2012.1080p.Bluray.x264.YIFY.mp4
+        ../MY CV2.docx
+        ../OS/
+        ../ParameterThymeleaf/.gitignore
+        ../ParameterThymeleaf/.mvn/
+        ../ParameterThymeleaf/mvnw
+        ../ParameterThymeleaf/mvnw.cmd
+        ../ParameterThymeleaf/pom.xml
+        ../ParameterThymeleaf/src/main/java/com/example/parameterthymeleaf/ParameterThymeleafApplication.java
+        ../ParameterThymeleaf/src/main/resources/
+        ../ParameterThymeleaf/src/test/
+        ../PrashantSBasnetCV.pdf
+        ../PrashantSinghBasnetCV.pdf
+        ../Prashantcv.docx
+        ../Prashantcv.pdf
+        ../Professional Hadoop - Benoy Antony, Konstantin Boudnik, Cheryl Adams, Branky Shao, Cazen Lee, Kai Sa.pdf
+        ../Spring/
+        ../Submitted Home assignments/
+        ../Thyme/.gitignore
+        ../Thyme/.mvn/
+        ../Thyme/mvnw
+        ../Thyme/mvnw.cmd
+        ../Thyme/pom.xml
+        ../Thyme/src/main/java/com/example/thyme/ThymeApplication.java
+        ../Thyme/src/main/resources/application.properties
+        ../Thyme/src/test/
+        ../Thymeleaf/
+        ../apex.png
+        ../binaryfiles/
+        ../bookmarks_8_22_20.html
+        ../comp2 PROD PRJ.png
+        ../coverletter:cv/
+        ../demo/.gitignore
+        ../demo/.mvn/
+        ../demo/mvnw
+        ../demo/mvnw.cmd
+        ../demo/pom.xml
+        ../demo/src/main/java/com/example/demo/DemoApplication.java
+        ../demo/src/main/resources/application.properties
+        ../demo/src/test/
+        ../docker screenshots/
+        ../download movie.png
+        ../expenses.xlsx
+        ../git/
+        ../hadoop prg/
+        ../imghadoop/
+        ../malshree (online-audio-converter.com).mp3
+        ../mg vs nexon.png
+        ../oracle sudo
+        ../part-r-00000
+        ../screenshots level 6/
+        ../thymeLeafDemo/
+        ../voice/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+prashant@Prashants-MacBook-Air EMS % git add .
+prashant@Prashants-MacBook-Air EMS % git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ../CRUD/src/main/java/com/example/crud/controller/DesignationController.java
+        modified:   ../CRUD/src/main/java/com/example/crud/dto/DesignationDto.java
+        modified:   ../CRUD/src/main/resources/templates/index.html
+        modified:   ../CRUD/src/test/java/com/example/crud/CrudApplicationTests.java
+        modified:   ../Employee Management Sys/EmployeeManagementSystem/src/main/resources/designation/index.html
+        deleted:    ../ManagementSystem/src/main/java/com/example/managementsystem/controller/DesignationController.java
+        modified:   ../ParameterPass/pom.xml
+        modified:   ../ParameterPass/src/main/java/controller/MainController.java
+        modified:   ../ParameterPass/src/main/resources/index.html
+        modified:   ../ParameterThymeleaf/src/main/java/com/example/parameterthymeleaf/Controller/DemoController.java
+        modified:   ../Thyme/src/main/java/com/example/thyme/controller/MainController.java
+        modified:   ../Thyme/src/main/java/com/example/thyme/dto/SampleDto.java
+        modified:   ../demo/src/main/java/com/example/demo/dto/DesignationDto.java
+        modified:   ../demo/src/main/resources/index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../.gitignore
+        ../.localized
+        ../?intitle: index.of? mkv name
+        ../Articles/
+        ../Concepts_Java/
+        ../Employee Management Sys/EmployeeManagementSystem/.gitignore
+        ../Employee Management Sys/EmployeeManagementSystem/.mvn/
+        ../Employee Management Sys/EmployeeManagementSystem/mvnw
+        ../Employee Management Sys/EmployeeManagementSystem/mvnw.cmd
+        ../Employee Management Sys/EmployeeManagementSystem/pom.xml
+        ../Employee Management Sys/EmployeeManagementSystem/src/main/java/
+        ../Employee Management Sys/EmployeeManagementSystem/src/main/resources/application.properties
+        ../Employee Management Sys/EmployeeManagementSystem/src/test/
+        ../Employee Management Sys/Tutorial1/
+        ../Info Developers/
+        ../JAVA codes ss/
+        ../JDBC/
+        ../LEVEL 6/
+        ../Lincoln.2012.1080p.Bluray.x264.YIFY.mp4
+        ../MY CV2.docx
+        ../OS/
+        ../ParameterThymeleaf/.gitignore
+        ../ParameterThymeleaf/.mvn/
+        ../ParameterThymeleaf/mvnw
+        ../ParameterThymeleaf/mvnw.cmd
+        ../ParameterThymeleaf/pom.xml
+        ../ParameterThymeleaf/src/main/java/com/example/parameterthymeleaf/ParameterThymeleafApplication.java
+        ../ParameterThymeleaf/src/main/resources/
+        ../ParameterThymeleaf/src/test/
+        ../PrashantSBasnetCV.pdf
+        ../PrashantSinghBasnetCV.pdf
+        ../Prashantcv.docx
+        ../Prashantcv.pdf
+        ../Professional Hadoop - Benoy Antony, Konstantin Boudnik, Cheryl Adams, Branky Shao, Cazen Lee, Kai Sa.pdf
+        ../Spring/
+        ../Submitted Home assignments/
+        ../Thyme/.gitignore
+        ../Thyme/.mvn/
+        ../Thyme/mvnw
+        ../Thyme/mvnw.cmd
+        ../Thyme/pom.xml
+        ../Thyme/src/main/java/com/example/thyme/ThymeApplication.java
+        ../Thyme/src/main/resources/application.properties
+        ../Thyme/src/test/
+        ../Thymeleaf/
+        ../apex.png
+        ../binaryfiles/
+        ../bookmarks_8_22_20.html
+        ../comp2 PROD PRJ.png
+        ../coverletter:cv/
+        ../demo/.gitignore
+        ../demo/.mvn/
+        ../demo/mvnw
+        ../demo/mvnw.cmd
+        ../demo/pom.xml
+        ../demo/src/main/java/com/example/demo/DemoApplication.java
+        ../demo/src/main/resources/application.properties
+        ../demo/src/test/
+        ../docker screenshots/
+        ../download movie.png
+        ../expenses.xlsx
+        ../git/
+        ../hadoop prg/
+        ../imghadoop/
+        ../malshree (online-audio-converter.com).mp3
+        ../mg vs nexon.png
+        ../oracle sudo
+        ../part-r-00000
+        ../screenshots level 6/
+        ../thymeLeafDemo/
+        ../voice/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+prashant@Prashants-MacBook-Air EMS % clear
+prashant@Prashants-MacBook-Air EMS % git ls
+git: 'ls' is not a git command. See 'git --help'.
+
+The most similar command is
+        lfs
+prashant@Prashants-MacBook-Air EMS % ls
+EMS.iml                 HELP.md                 mvnw.cmd                src
+Employee_Details.iml    mvnw                    pom.xml                 target
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % ls -al
+total 136
+drwxr-xr-x  12 prashant  staff    384 Aug 27 16:11 .
+drwx------@ 50 prashant  staff   1600 Aug 27 14:55 ..
+-rw-r--r--@  1 prashant  staff   6148 Aug 27 12:46 .DS_Store
+drwxr-xr-x  13 prashant  staff    416 Aug 27 16:12 .idea
+-rw-r--r--   1 prashant  staff  12461 Aug 27 12:42 EMS.iml
+-rw-r--r--   1 prashant  staff   9564 Aug 27 15:40 Employee_Details.iml
+-rw-r--r--   1 prashant  staff   3232 Aug 27 10:41 HELP.md
+-rwxr-xr-x   1 prashant  staff  10070 Aug 27 10:41 mvnw
+-rw-r--r--   1 prashant  staff   6608 Aug 27 10:41 mvnw.cmd
+-rw-r--r--   1 prashant  staff   6589 Aug 27 15:39 pom.xml
+drwxr-xr-x   4 prashant  staff    128 Aug 27 10:41 src
+drwxr-xr-x   7 prashant  staff    224 Aug 27 15:21 target
+prashant@Prashants-MacBook-Air EMS % git init 
+Initialized empty Git repository in /Users/prashant/Documents/EMS/.git/
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % git remote add origin https://gitlab.com/PrashantSBasnet/crud-springboot.git
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .idea/
+        EMS.iml
+        Employee_Details.iml
+        HELP.md
+        mvnw
+        mvnw.cmd
+        pom.xml
+        src/
+        target/
+
+nothing added to commit but untracked files present (use "git add" to track)
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % git add .
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % git status
+'On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .idea/compiler.xml
+        new file:   .idea/dataSources.local.xml
+        new file:   .idea/dataSources.xml
+        new file:   .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e.xml
+        new file:   .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/entities/entities.dat
+        new file:   .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/entities/entities.dat.len
+        new file:   .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/entities/entities.dat.values
+        new file:   .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/entities/entities.dat.values.at
+        new file:   .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/entities/entities.dat.values.s
+        new file:   .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/entities/entities.dat_i
+        new file:   .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/entities/entities.dat_i.len
+        new file:   .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/storage_v2/_src_/database/newdb.Hs49Bg.meta
+        new file:   .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/storage_v2/_src_/database/newdb.Hs49Bg/schema/information_schema.FNRwLQ.meta
+        new file:   .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/storage_v2/_src_/database/newdb.Hs49Bg/schema/pg_catalog.0S1ZNQ.meta
+        new file:   .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/storage_v2/_src_/database/newdb.Hs49Bg/schema/public.abK9xQ.meta
+        new file:   .idea/encodings.xml
+        new file:   .idea/jarRepositories.xml
+        new file:   .idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_5.xml
+        new file:   .idea/libraries/Maven__ch_qos_logback_logback_core_1_2_5.xml
+        new file:   .idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_12_4.xml
+        new file:   .idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_12_4.xml
+        new file:   .idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_12_4.xml
+        new file:   .idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_12_4.xml
+        new file:   .idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_12_4.xml
+        new file:   .idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_12_4.xml
+        new file:   .idea/libraries/Maven__com_jayway_jsonpath_json_path_2_5_0.xml
+        new file:   .idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml
+        new file:   .idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml
+        new file:   .idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml
+        new file:   .idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml
+        new file:   .idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_22.xml
+        new file:   .idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_22.xml
+        new file:   .idea/libraries/Maven__net_minidev_accessors_smart_2_4_7.xml
+        new file:   .idea/libraries/Maven__net_minidev_json_smart_2_4_7.xml
+        new file:   .idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_14_1.xml
+        new file:   .idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_14_1.xml
+        new file:   .idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_52.xml
+        new file:   .idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_52.xml
+        new file:   .idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_52.xml
+        new file:   .idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml
+        new file:   .idea/libraries/Maven__org_assertj_assertj_core_3_19_0.xml
+        new file:   .idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml
+        new file:   .idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml
+        new file:   .idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_2.xml
+        new file:   .idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_2.xml
+        new file:   .idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_2.xml
+        new file:   .idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_2.xml
+        new file:   .idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_2.xml
+        new file:   .idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_2.xml
+        new file:   .idea/libraries/Maven__org_mockito_mockito_core_3_9_0.xml
+        new file:   .idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_9_0.xml
+        new file:   .idea/libraries/Maven__org_objenesis_objenesis_3_2.xml
+        new file:   .idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml
+        new file:   .idea/libraries/Maven__org_ow2_asm_asm_9_1.xml
+        new file:   .idea/libraries/Maven__org_projectlombok_lombok_1_18_20.xml
+        new file:   .idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml
+        new file:   .idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_32.xml
+        new file:   .idea/libraries/Maven__org_slf4j_slf4j_api_1_7_32.xml
+        new file:   .idea/libraries/Maven__org_springframework_boot_spring_boot_2_5_4.xml
+        new file:   .idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_5_4.xml
+        new file:   .idea/libraries/Maven__org_springframework_boot_spring_boot_configuration_processor_2_5_4.xml
+        new file:   .idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_5_4.xml
+        new file:   .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_5_4.xml
+        new file:   .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_5_4.xml
+        new file:   .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_5_4.xml
+        new file:   .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_5_4.xml
+        new file:   .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_5_4.xml
+        new file:   .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_5_4.xml
+        new file:   .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_5_4.xml
+        new file:   .idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_5_4.xml
+        new file:   .idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_5_4.xml
+        new file:   .idea/libraries/Maven__org_springframework_experimental_spring_native_0_10_2.xml
+        new file:   .idea/libraries/Maven__org_springframework_spring_aop_5_3_9.xml
+        new file:   .idea/libraries/Maven__org_springframework_spring_beans_5_3_9.xml
+        new file:   .idea/libraries/Maven__org_springframework_spring_context_5_3_9.xml
+        new file:   .idea/libraries/Maven__org_springframework_spring_core_5_3_9.xml
+        new file:   .idea/libraries/Maven__org_springframework_spring_expression_5_3_9.xml
+        new file:   .idea/libraries/Maven__org_springframework_spring_jcl_5_3_9.xml
+        new file:   .idea/libraries/Maven__org_springframework_spring_test_5_3_9.xml
+        new file:   .idea/libraries/Maven__org_springframework_spring_web_5_3_9.xml
+        new file:   .idea/libraries/Maven__org_springframework_spring_webmvc_5_3_9.xml
+        new file:   .idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_4_RELEASE.xml
+        new file:   .idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_12_RELEASE.xml
+        new file:   .idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_12_RELEASE.xml
+        new file:   .idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml
+        new file:   .idea/libraries/Maven__org_xmlunit_xmlunit_core_2_8_2.xml
+        new file:   .idea/libraries/Maven__org_yaml_snakeyaml_1_28.xml
+        new file:   .idea/misc.xml
+        new file:   .idea/modules.xml
+        new file:   .idea/runConfigurations.xml
+        new file:   .idea/workspace.xml
+        new file:   EMS.iml
+        new file:   Employee_Details.iml
+        new file:   HELP.md
+        new file:   mvnw
+        new file:   mvnw.cmd
+        new file:   pom.xml
+        new file:   src/main/java/com/example/ems/EmsApplication.java
+        new file:   src/main/java/com/example/ems/controller/DesignationController.java
+        new file:   src/main/java/com/example/ems/dto/DesignationDto.java
+        new file:   src/main/java/com/example/ems/entity/Designation.java
+        new file:   src/main/java/com/example/ems/service/DesignationService.java
+        new file:   src/main/resources/application.properties
+        new file:   src/main/resources/templates/index.html
+        new file:   src/main/resources/templates/index1.html
+        new file:   src/test/java/com/example/ems/EmsApplicationTests.java
+        new file:   target/classes/application.properties
+        new file:   target/classes/com/example/ems/EmsApplication.class
+        new file:   target/classes/com/example/ems/controller/DesignationController.class
+        new file:   target/classes/com/example/ems/dto/DesignationDto.class
+        new file:   target/classes/com/example/ems/service/DesignationService.class
+        new file:   target/classes/templates/index.html
+        new file:   target/classes/templates/index1.html
+        new file:   target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+        new file:   target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+        new file:   target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+        new file:   target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+        new file:   target/test-classes/com/example/ems/EmsApplicationTests.class
+
+prashant@Prashants-MacBook-Air EMS % '
+quote> 
+quote>  
+prashant@Prashants-MacBook-Air EMS % git commit -m "initial commit "
+[master (root-commit) 2d35110] initial commit
+ 118 files changed, 4175 insertions(+)
+ create mode 100644 .idea/compiler.xml
+ create mode 100644 .idea/dataSources.local.xml
+ create mode 100644 .idea/dataSources.xml
+ create mode 100644 .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e.xml
+ create mode 100644 .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/entities/entities.dat
+ create mode 100644 .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/entities/entities.dat.len
+ create mode 100644 .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/entities/entities.dat.values
+ create mode 100644 .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/entities/entities.dat.values.at
+ create mode 100644 .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/entities/entities.dat.values.s
+ create mode 100644 .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/entities/entities.dat_i
+ create mode 100644 .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/entities/entities.dat_i.len
+ create mode 100644 .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/storage_v2/_src_/database/newdb.Hs49Bg.meta
+ create mode 100644 .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/storage_v2/_src_/database/newdb.Hs49Bg/schema/information_schema.FNRwLQ.meta
+ create mode 100644 .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/storage_v2/_src_/database/newdb.Hs49Bg/schema/pg_catalog.0S1ZNQ.meta
+ create mode 100644 .idea/dataSources/6fff92a9-6624-42a4-a996-7a53db6e691e/storage_v2/_src_/database/newdb.Hs49Bg/schema/public.abK9xQ.meta
+ create mode 100644 .idea/encodings.xml
+ create mode 100644 .idea/jarRepositories.xml
+ create mode 100644 .idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_5.xml
+ create mode 100644 .idea/libraries/Maven__ch_qos_logback_logback_core_1_2_5.xml
+ create mode 100644 .idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_12_4.xml
+ create mode 100644 .idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_12_4.xml
+ create mode 100644 .idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_12_4.xml
+ create mode 100644 .idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_12_4.xml
+ create mode 100644 .idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_12_4.xml
+ create mode 100644 .idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_12_4.xml
+ create mode 100644 .idea/libraries/Maven__com_jayway_jsonpath_json_path_2_5_0.xml
+ create mode 100644 .idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml
+ create mode 100644 .idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml
+ create mode 100644 .idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml
+ create mode 100644 .idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml
+ create mode 100644 .idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_22.xml
+ create mode 100644 .idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_22.xml
+ create mode 100644 .idea/libraries/Maven__net_minidev_accessors_smart_2_4_7.xml
+ create mode 100644 .idea/libraries/Maven__net_minidev_json_smart_2_4_7.xml
+ create mode 100644 .idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_14_1.xml
+ create mode 100644 .idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_14_1.xml
+ create mode 100644 .idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_52.xml
+ create mode 100644 .idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_52.xml
+ create mode 100644 .idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_52.xml
+ create mode 100644 .idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml
+ create mode 100644 .idea/libraries/Maven__org_assertj_assertj_core_3_19_0.xml
+ create mode 100644 .idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml
+ create mode 100644 .idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml
+ create mode 100644 .idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_2.xml
+ create mode 100644 .idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_2.xml
+ create mode 100644 .idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_2.xml
+ create mode 100644 .idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_2.xml
+ create mode 100644 .idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_2.xml
+ create mode 100644 .idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_2.xml
+ create mode 100644 .idea/libraries/Maven__org_mockito_mockito_core_3_9_0.xml
+ create mode 100644 .idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_9_0.xml
+ create mode 100644 .idea/libraries/Maven__org_objenesis_objenesis_3_2.xml
+ create mode 100644 .idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml
+ create mode 100644 .idea/libraries/Maven__org_ow2_asm_asm_9_1.xml
+ create mode 100644 .idea/libraries/Maven__org_projectlombok_lombok_1_18_20.xml
+ create mode 100644 .idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml
+ create mode 100644 .idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_32.xml
+ create mode 100644 .idea/libraries/Maven__org_slf4j_slf4j_api_1_7_32.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_boot_spring_boot_2_5_4.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_5_4.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_boot_spring_boot_configuration_processor_2_5_4.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_5_4.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_5_4.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_5_4.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_5_4.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_5_4.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_5_4.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_5_4.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_5_4.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_5_4.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_5_4.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_experimental_spring_native_0_10_2.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_spring_aop_5_3_9.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_spring_beans_5_3_9.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_spring_context_5_3_9.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_spring_core_5_3_9.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_spring_expression_5_3_9.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_spring_jcl_5_3_9.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_spring_test_5_3_9.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_spring_web_5_3_9.xml
+ create mode 100644 .idea/libraries/Maven__org_springframework_spring_webmvc_5_3_9.xml
+ create mode 100644 .idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_4_RELEASE.xml
+ create mode 100644 .idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_12_RELEASE.xml
+ create mode 100644 .idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_12_RELEASE.xml
+ create mode 100644 .idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml
+ create mode 100644 .idea/libraries/Maven__org_xmlunit_xmlunit_core_2_8_2.xml
+ create mode 100644 .idea/libraries/Maven__org_yaml_snakeyaml_1_28.xml
+ create mode 100644 .idea/misc.xml
+ create mode 100644 .idea/modules.xml
+ create mode 100644 .idea/runConfigurations.xml
+ create mode 100644 .idea/workspace.xml
+ create mode 100644 EMS.iml
+ create mode 100644 Employee_Details.iml
+ create mode 100644 HELP.md
+ create mode 100755 mvnw
+ create mode 100644 mvnw.cmd
+ create mode 100644 pom.xml
+ create mode 100644 src/main/java/com/example/ems/EmsApplication.java
+ create mode 100644 src/main/java/com/example/ems/controller/DesignationController.java
+ create mode 100644 src/main/java/com/example/ems/dto/DesignationDto.java
+ create mode 100644 src/main/java/com/example/ems/entity/Designation.java
+ create mode 100644 src/main/java/com/example/ems/service/DesignationService.java
+ create mode 100644 src/main/resources/application.properties
+ create mode 100644 src/main/resources/templates/index.html
+ create mode 100644 src/main/resources/templates/index1.html
+ create mode 100644 src/test/java/com/example/ems/EmsApplicationTests.java
+ create mode 100644 target/classes/application.properties
+ create mode 100644 target/classes/com/example/ems/EmsApplication.class
+ create mode 100644 target/classes/com/example/ems/controller/DesignationController.class
+ create mode 100644 target/classes/com/example/ems/dto/DesignationDto.class
+ create mode 100644 target/classes/com/example/ems/service/DesignationService.class
+ create mode 100644 target/classes/templates/index.html
+ create mode 100644 target/classes/templates/index1.html
+ create mode 100644 target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+ create mode 100644 target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+ create mode 100644 target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+ create mode 100644 target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+ create mode 100644 target/test-classes/com/example/ems/EmsApplicationTests.class
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % git branch         
+* master
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % git push origin master
+Enumerating objects: 162, done.
+Counting objects: 100% (162/162), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (136/136), done.
+Writing objects: 100% (162/162), 64.03 KiB | 2.91 MiB/s, done.
+Total 162 (delta 62), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (62/62), done.
+remote: 
+remote: To create a merge request for master, visit:
+remote:   https://gitlab.com/PrashantSBasnet/crud-springboot/-/merge_requests/new?merge_request%5Bsource_branch%5D=master
+remote: 
+To https://gitlab.com/PrashantSBasnet/crud-springboot.git
+ * [new branch]      master -> master
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % git branch -al
+* master
+  remotes/origin/master
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % git branch -r
+  origin/master
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % git checkout -b pass-param
+Switched to a new branch 'pass-param'
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % git status
+On branch pass-param
+nothing to commit, working tree clean
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % git branch 
+  master
+* pass-param
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % 
+prashant@Prashants-MacBook-Air EMS % git status
+On branch pass-param
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .idea/workspace.xml
+        modified:   src/main/java/com/example/ems/controller/DesignationController.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+prashant@Prashants-MacBook-Air EMS % git commit -am"Added param"
+[pass-param 02ee7dd] Added param
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+prashant@Prashants-MacBook-Air EMS % git push origin pass-param 
+Enumerating objects: 23, done.
+Counting objects: 100% (23/23), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (12/12), 835 bytes | 835.00 KiB/s, done.
+Total 12 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: To create a merge request for pass-param, visit:
+remote:   https://gitlab.com/PrashantSBasnet/crud-springboot/-/merge_requests/new?merge_request%5Bsource_branch%5D=pass-param
+remote: 
+To https://gitlab.com/PrashantSBasnet/crud-springboot.git
+ * [new branch]      pass-param -> pass-param
+prashant@Prashants-MacBook-Air EMS % 
